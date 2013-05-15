@@ -27,6 +27,16 @@ C# client for the [coderbits profile API](https://coderbits.com/api)
 
 You can see all possible fields available in the profile model [here](https://github.com/scottksmith95/CSharp.Coderbits/blob/master/src/CSharp.Coderbits/CoderbitsModel.cs).
 
+## Resources
+
+- API documentation can be found here: https://coderbits.com/api
+- NuGet package can be found here: https://nuget.org/packages/CSharp.Coderbits
+
+## NuGet Dependency Status
+
+[![NuGet Status](http://nugetstatus.com/CSharp.Coderbits.png)](http://nugetstatus.com/packages/CSharp.Coderbits)
+
+
 ##License
 
 The MIT License (MIT)
