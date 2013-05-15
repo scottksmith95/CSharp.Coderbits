@@ -47,8 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Coderbits.cs" />
-    <Compile Include="CoderbitsModel.cs" />
+    <Compile Include="Api.cs" />
+    <Compile Include="ApiModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

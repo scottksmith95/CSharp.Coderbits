@@ -4,16 +4,16 @@ using System.Threading.Tasks;
 
 namespace CSharp.Coderbits
 {
-    public class Coderbits
+    public class Api
     {
         const string PATH = "https://coderbits.com/";
 
-        public CoderbitsModel GetProfile(string username)
+        public ApiModel GetProfile(string username)
         {
             return GetProfileAsync(username).Result;
         }
 
-        public async Task<CoderbitsModel> GetProfileAsync(string username)
+        public async Task<ApiModel> GetProfileAsync(string username)
         {
             //Create HttpClient for making request for profile
             var client = new HttpClient();
@@ -25,7 +25,7 @@ namespace CSharp.Coderbits
             var jsonString = await jsonStringTask;
 
             //Convert to JSON string to Coderbits model
-            var coderbitsModelTask = JsonConvert.DeserializeObjectAsync<CoderbitsModel>(jsonString);
+            var coderbitsModelTask = JsonConvert.DeserializeObjectAsync<ApiModel>(jsonString);
 
             //Await
             var coderbitsModel = await coderbitsModelTask;

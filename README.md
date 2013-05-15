@@ -5,17 +5,21 @@ C# client for the [coderbits profile API](https://coderbits.com/api)
 
 ## Usage
 
+### Add using statement
+
+    using CSharp.Coderbits;
+
 ### Create the object
 
-    var coderbits = new Coderbits();
+    var coderbitsApi = new Api();
 
 ### Retrieve a profile
 
-    var coderbitsModel = coderbits.GetProfile("scott");
+    var coderbitsModel = coderbitsApi.GetProfile("scott");
 
 ### Retrieve a profile async
 
-    var coderbitsModelTask = coderbits.GetProfileAsync("scott");
+    var coderbitsModelTask = coderbitsApi.GetProfileAsync("scott");
 
     //Do work
 
@@ -25,7 +29,7 @@ C# client for the [coderbits profile API](https://coderbits.com/api)
 
     Console.WriteLine(coderbitsModel.name);
 
-You can see all possible fields available in the profile model [here](https://github.com/scottksmith95/CSharp.Coderbits/blob/master/src/CSharp.Coderbits/CoderbitsModel.cs).
+You can see all possible fields available in the profile model [here](https://github.com/scottksmith95/CSharp.Coderbits/blob/master/src/CSharp.Coderbits/ApiModel.cs).
 
 ## Resources
 

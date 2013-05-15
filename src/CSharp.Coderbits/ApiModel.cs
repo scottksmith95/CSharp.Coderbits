@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CSharp.Coderbits
 {
-    public class CoderbitsModel
+    public class ApiModel
     {
         public string name { get; set; }
         public string title { get; set; }
