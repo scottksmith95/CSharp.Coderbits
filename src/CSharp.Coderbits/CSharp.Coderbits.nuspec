@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/scottksmith95/CSharp.Coderbits</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Fix for deadlocks that could occur in certain situations.</releaseNotes>
+    <releaseNotes>Updated dependencies.</releaseNotes>
     <copyright>Copyright 2013</copyright>
     <tags>Coderbits</tags>
   </metadata>
