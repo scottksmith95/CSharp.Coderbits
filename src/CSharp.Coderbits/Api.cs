@@ -19,8 +19,9 @@ namespace CSharp.Coderbits
             var client = new HttpClient();
 
             //Get profile response as a JSON string
-            var jsonStringTask = client.GetStringAsync(PATH + username + ".json");
-
+            var jsonStringTask = client.GetStringAsync(PATH + username + ".json")
+                                       .ConfigureAwait(continueOnCapturedContext: false);
+        
             //Await
             var jsonString = await jsonStringTask;
 
